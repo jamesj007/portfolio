@@ -9,6 +9,7 @@ const Holder = styled.div`
 const ContentImage = styled.img`
     width: 60px;
     max-width: 60px;
+    cursor: pointer;
 `;
 
 
