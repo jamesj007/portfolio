@@ -2,6 +2,7 @@ import React, { Component } from 'react';
 import Card from '../Cards/Card';
 import {spring, presets, TransitionMotion} from 'react-motion';
 import styled from 'styled-components';
+import './GameBoard.css';
 
 
 const Board = styled.div`
