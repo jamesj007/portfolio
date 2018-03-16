@@ -9,7 +9,8 @@ const Board = styled.div`
     margin: 0 auto;
     background-color: rgb(30, 30, 41);
     height: 500px;
-    overflow: scroll;
+    overflow: auto;
+    overflow-x: hidden;
 `;
 
 const CardList = styled.ul`
@@ -75,7 +76,7 @@ class GameBoard extends Component {
         return (
             <div>
                 <SmallHeader>{this.state.header}</SmallHeader>
-                <Board>
+                <Board className="cardCont">
                     <TransitionMotion
                         defaultStyles={this.getDefaultStyles()}
                         willEnter={this.willEnter}
