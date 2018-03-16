@@ -1,3 +1,9 @@
+.cardCont {
+    overflow: hidden;
+    height: 100%;
+    width: 100%;
+}
+
 .cardCont::-webkit-scrollbar { 
     display: none; 
 }
