@@ -62,6 +62,16 @@ export const AppContent = [
                 languages: ["ReactJS", "HTML/CSS", "JavaScript"]
             },
             {
+                title: "Le Prince Perdu",
+                subTitle: "Honors Thesis",
+                simg: project_icon,
+                content: `Final project as part of my Honors Thesis for Barrett Honors College. Creating this game for the French Department at ASU to assist new French students in learning French. In a group of four, I lead the programming of the game alongside one other programmer while the other two focus on game content.
+                        Learned and implemented a lot of valuable concepts such as inheritance, polymorphism, abstraction, and encapsulation. In addition to OOP, design patterns such as 'factory' method were also used
+                        to make the code cleaner and scalable.
+                        `,
+                languages: ["Unity3D", "C#"]
+            },
+            {
                 title: "GoHome Bot",
                 subTitle: "Built with ExpressJS",
                 simg: project_icon,
