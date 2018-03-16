@@ -1,0 +1,25 @@
+.App {
+  text-align: center;
+}
+ img {
+   width: 25px;
+ }
+
+ #intro {
+   font-size: 28px;
+   margin: 0px;
+ }
+
+ #lang {
+   font-size: 20px;
+   margin: 15px 0px 5px 0px;
+ }
+
+ #about {
+   font-size: 20px;
+   margin: 5px 0px 10px 0px;
+ }
+
+ #footer {
+   justify-self: end;
+ }

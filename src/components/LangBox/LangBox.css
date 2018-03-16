@@ -1,0 +1,9 @@
+.boxy {
+    display: inline-block;
+    height: 20px;
+    border: 1.5px solid rgb(226, 102, 164);
+    text-align: center;
+    margin: 5px;
+    padding: 5px 8px;
+    border-radius: 5px;
+}
