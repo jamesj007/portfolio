@@ -6,6 +6,8 @@ class CardContent extends Component {
 
     //style={{width: `${ this.props.cwidth }%`, maxWidth: `${ this.props.cwidth }%`, opacity: this.props.show}}
 
+    //simple component to host information in a card-like manner. I set up checks within the components to use whichever props
+    //is available
     render() {
         return (
             <div ref={(card) => this.card = card} className="card">    

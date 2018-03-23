@@ -4,7 +4,7 @@ import {spring, presets, TransitionMotion} from 'react-motion';
 import styled from 'styled-components';
 import './GameBoard.css';
 
-
+//helper components
 const Board = styled.div`
     margin: 0 auto;
     background-color: rgb(30, 30, 41);
@@ -30,8 +30,11 @@ const SmallHeader = styled.h2`
     border-bottom: 1px solid white;
 `;
 
+//This component uses React motion to animate a set of cards from Card.js. I get the list of Cards from the parent and then use
+//React motion to animate those cards to have a pop-up effect. 
 class GameBoard extends Component {
 
+    //initialize the component with the appropriate card list 
     constructor(props) {
         super(props);
 
@@ -47,10 +50,12 @@ class GameBoard extends Component {
         this.getStyles = this.getStyles.bind(this);
     }
 
+    //react-motion function to when an item enters 
     willEnter() {
         return {width:0, opacity: 0};
     }
 
+    //react-motion function to define initial styling of animating components
     getDefaultStyles() {
         return this.state.cardList.map((card) => ({
             ...card, 
@@ -61,6 +66,7 @@ class GameBoard extends Component {
         }));
     }
 
+    //helper function which returns the final styling of animating components. THis is all React-motion specific
     getStyles() {
         return this.state.cardList.map((card) => ({
             ...card, 
@@ -71,6 +77,8 @@ class GameBoard extends Component {
         }));
     }
 
+    //The animation is done via TransitionMotion. I specify the initial/default Styles and then specify what I want the final 
+    //state of the animation to be and then react-motion takes care of all of it.
     render() {
         
         return (

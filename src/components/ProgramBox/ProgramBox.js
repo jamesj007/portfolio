@@ -3,6 +3,8 @@ import Typist from 'react-typist';
 import 'react-typist/dist/Typist.css';
 import styled from 'styled-components';
 
+
+//supporting components for the Program Box. Nothing special 
 const Terminal = styled.div`
     background-color: ${(props) => props.bcolor};
 `;
@@ -21,6 +23,9 @@ const Header = styled.h5`
     margin: 0px;
 `;
 
+
+//kind of a gimmicky terminal thing that I created for fun. I really did not have any better ideas. It uses the Typist
+//component to type the words. I reset the typing if different words and styles are passed to the ProgramBox.
 class ProgramBox extends Component {
 
     constructor(props) {
@@ -30,6 +35,7 @@ class ProgramBox extends Component {
         };
     }
 
+    //reset the typing. setState here will automatically re-render the component. 
     componentWillReceiveProps(nextProps) {
         if (nextProps.t_info.run_command !== this.props.t_info.run_command) {
             this.setState({ typing: false }, () => {

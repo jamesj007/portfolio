@@ -20,7 +20,7 @@ export const PageContain = styled.div`
 
 class App extends Component {
 
-  //render the application
+  //render the application. I render the ViewInfo component here which hosts the three images and the GameBoard components
   render() {
     return (
       <div className="App">
