@@ -132,7 +132,7 @@ export const AppContent = [
                 title: "Other Contacts",
                 subTitle: "",
                 simg: contact_icon,
-                content: <span>LinkedIn: <Cspan color="#ff56f0"><strong>Jovin James</strong></Cspan> <br/> Github: <Cspan color="#ff56f0"><strong>jamesj007</strong></Cspan></span>,
+                content: <span>LinkedIn: <Cspan color="#ff56f0"><strong>Jovin James</strong></Cspan> <br/> Github: <Cspan color="#ff56f0"><strong>joviij</strong></Cspan></span>,
                 
             },
         ]
